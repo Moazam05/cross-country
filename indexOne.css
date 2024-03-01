@@ -55,8 +55,6 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* height: 110vh; */
-  height: 1000px;
 }
 
 .header-section {
@@ -162,6 +160,7 @@ p {
   font-size: 12px;
   margin: 5px 0;
   font-weight: 500;
+  color: #ff0000;
 }
 
 .single-field-wrap {
@@ -198,4 +197,11 @@ p {
   padding: 10px 24px;
   text-align: center;
   margin-top: 20px;
+}
+
+.hero-left {
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
 }
