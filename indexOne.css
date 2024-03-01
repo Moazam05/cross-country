@@ -206,3 +206,8 @@ p {
   justify-content: end;
   flex-direction: column;
 }
+
+.card-error {
+  position: absolute;
+  left: 128px;
+}

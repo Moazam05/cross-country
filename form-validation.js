@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       { id: "city", message: "City required" },
       { id: "state", message: "State required" },
       { id: "zip", message: "Zip required" },
-      { id: "cardNumber", message: "Card Number required" },
+      { id: "cardNumber", message: "Card required" },
       { id: "currentHomeValue", message: "Home Value required" },
       { id: "remainingBalance", message: "Remaining Balance required" },
       { id: "cashOutAmount", message: "Cash Out Amount required" },
