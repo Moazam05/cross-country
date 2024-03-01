@@ -1,395 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CROSSCOUNTRY MORTGAGE</title>
-    <!-- Styles -->
-    <link rel="stylesheet" href="./cross_assets/bootstrap.css" />
-    <link rel="stylesheet" href="./indexOne.css" />
 
-    <!-- Scripts -->
-    <script src="./cross_assets/jquery.js"></script>
-    <script src="./cross_assets/bootstrap.js"></script>
-    <script src="./form-validation.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CROSSCOUNTRY MORTGAGE</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="./cross_assets/bootstrap.css" />
+  <link rel="stylesheet" href="./indexOne.css" />
 
-  <body>
-    <section class="hero-wrap">
-      <div class="container">
-        <header>
-          <div class="header-section">
-            <img src="./cross_assets/img/logo.png" alt="logo" />
-            <div class="prefer">
-              <p>Prefer to talk to a live person? </p>
-              <p>888-888-8888</p>
+  <!-- Scripts -->
+  <script src="./cross_assets/jquery.js"></script>
+  <script src="./cross_assets/bootstrap.js"></script>
+  <script src="./form-validation.js"></script>
+</head>
+
+<body>
+  <section class="hero-wrap">
+    <div class="container">
+      <header>
+        <div class="header-section">
+          <img src="./cross_assets/img/logo.png" alt="logo" />
+          <div class="prefer">
+            <p>Prefer to talk to a live person? </p>
+            <p>888-888-8888</p>
+          </div>
+        </div>
+      </header>
+      <div class="hero">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="hero-left">
+              <h1>
+                You DESERVE the <br />
+                best deal for your <br />
+                Refinance
+              </h1>
+              <p>
+                You could shorten your term or take cash out to consolidate
+                your credit card debt, make home improvements, or to use in
+                any way you may need. Don’t wait any longer apply or call now
+                !
+              </p>
             </div>
           </div>
-        </header>
-        <div class="hero">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="hero-left">
-                <h1>
-                  You DESERVE the <br />
-                  best deal for your <br />
-                  Refinance
-                </h1>
-                <p>
-                  You could shorten your term or take cash out to consolidate
-                  your credit card debt, make home improvements, or to use in
-                  any way you may need. Don’t wait any longer apply or call now
-                  !
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card-wrapper">
-                <div class="card text-center">
-                  <div class="card-body">
-                    <h3 class="card-title">GET STARTED — Apply Today!</h3>
-                    <form>
-                      <div class="form-group">
-                        <div class="form-row">
-                          <div class="single-field-wrap">
-                            <label for="firstName">First Name</label>
-
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="firstName"
-                              name="firstName"
-                              placeholder="First Name"
-                            />
-                            <span
-                              id="firstNameError"
-                              class="text-danger"
-                            ></span>
-                          </div>
-                          <div class="single-field-wrap">
-                            <label for="lastName">Last Name</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastName"
-                              name="lastName"
-                              placeholder="Last Name"
-                            />
-                            <span id="lastNameError" class="text-danger"></span>
-                          </div>
-                        </div>
-                        <!-- 2nd Row -->
-                        <div class="form-row">
-                          <div class="single-field-wrap">
-                            <label for="email">Email</label>
-
-                            <input
-                              type="email"
-                              class="form-control"
-                              id="email"
-                              name="email"
-                              placeholder="Email"
-                            />
-                            <span id="emailError" class="text-danger"></span>
-                          </div>
-                          <div class="single-field-wrap">
-                            <label for="phone">Phone</label>
-                            <input
-                              type="number"
-                              class="form-control"
-                              id="phone"
-                              name="phone"
-                              placeholder="Phone"
-                            />
-                            <span id="phoneError" class="text-danger"></span>
-                          </div>
-                        </div>
-                        <!-- 3rd Row -->
+          <div class="col-md-6">
+            <div class="card-wrapper">
+              <div class="card text-center">
+                <div class="card-body">
+                  <h3 class="card-title">GET STARTED — Apply Today!</h3>
+                  <form>
+                    <div class="form-group">
+                      <div class="form-row">
                         <div class="single-field-wrap">
-                          <label for="address">Address</label>
+                          <label for="firstName">First Name</label>
 
-                          <input
-                            type="address"
-                            class="form-control"
-                            id="address"
-                            name="address"
-                            placeholder="Address"
-                          />
-                          <span id="addressError" class="text-danger"></span>
+                          <input type="text" class="form-control" id="firstName" name="firstName"
+                            placeholder="First Name" />
+                          <span id="firstNameError" class="text-danger"></span>
                         </div>
-                        <!-- 4th Row -->
-                        <div class="form-row space">
-                          <div class="single-field-wrap">
-                            <label for="propertyType">Property Type</label>
-                            <select
-                              class="form-control"
-                              id="propertyType"
-                              name="propertyType"
-                            >
-                              <option value="" class="val-disabled">
-                                Property Type
-                              </option>
-                              <option value="Single Family">
-                                Single Family
-                              </option>
-                              <option value="Condo">Condo</option>
-                              <option value="Townhouse">Townhouse</option>
-                              <option value="Multi Family">Multi Family</option>
-                              <option value="Mobile Home">Mobile Home</option>
-                            </select>
-                            <span
-                              id="propertyTypeError"
-                              class="text-danger"
-                            ></span>
-                          </div>
-
-                          <div class="single-field-wrap">
-                            <label for="propertyUse">Property Use</label>
-                            <select
-                              class="form-control"
-                              id="propertyUse"
-                              name="propertyUse"
-                            >
-                              <option value="" class="val-disabled">
-                                Property Use
-                              </option>
-                              <option value="Primary Residence">
-                                Primary Residence
-                              </option>
-                              <option value="Secondary Residence">
-                                Secondary Residence
-                              </option>
-                              <option value="Investment Property">
-                                Investment Property
-                              </option>
-                            </select>
-                            <span
-                              id="propertyUseError"
-                              class="text-danger"
-                            ></span>
-                          </div>
-                        </div>
-
-                        <!-- 5th Row -->
-                        <div class="form-row">
-                          <div class="single-field-wrap">
-                            <label for="city">City</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="city"
-                              name="city"
-                              placeholder="City"
-                            />
-                            <span id="cityError" class="text-danger"></span>
-                          </div>
-
-                          <div class="single-field-wrap">
-                            <label for="state">State</label>
-                            <select
-                              class="form-control"
-                              id="state"
-                              name="state"
-                            >
-                              <option value="" class="val-disabled">
-                                State
-                              </option>
-                              <option value="AL">Alabama</option>
-                              <option value="AK">Alaska</option>
-                              <option value="AZ">Arizona</option>
-                              <option value="AR">Arkansas</option>
-                              <option value="CA">California</option>
-                              <option value="CO">Colorado</option>
-                              <option value="CT">Connecticut</option>
-                              <option value="DE">Delaware</option>
-                              <option value="DC">District Of Columbia</option>
-                              <option value="FL">Florida</option>
-                              <option value="GA">Georgia</option>
-                              <option value="HI">Hawaii</option>
-                              <option value="ID">Idaho</option>
-                              <option value="IL">Illinois</option>
-                              <option value="IN">Indiana</option>
-                              <option value="IA">Iowa</option>
-                            </select>
-                            <span id="stateError" class="text-danger"></span>
-                          </div>
-                        </div>
-
-                        <!-- 6th Row -->
-                        <div class="form-row">
-                          <div class="single-field-wrap-pa">
-                            <label for="zip">Zip Code</label>
-                            <input
-                              type="number"
-                              class="form-control"
-                              id="zip"
-                              name="zip"
-                              placeholder="Zip"
-                            />
-                            <span id="zipError" class="text-danger"></span>
-                          </div>
-                          <div class="single-field-wrap-pa">
-                            <label for="cardNumber"
-                              >Last 8 digits on your card*</label
-                            >
-                            <input
-                              type="number"
-                              class="form-control"
-                              id="cardNumber"
-                              name="cardNumber"
-                              placeholder="xxxx xxxx"
-                            />
-                            <div style="position: relative">
-                              <span
-                                id="cardNumberError"
-                                class="text-danger card-error"
-                              ></span>
-                              <p>How to find last 8 digits</p>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- 7th Row -->
-                        <div class="form-row">
-                          <div class="single-field-wrap">
-                            <!-- current home value -->
-                            <label for="currentHomeValue"
-                              >Refinance Current Home <br />
-                              Value</label
-                            >
-                            <input
-                              type="number"
-                              class="form-control"
-                              id="currentHomeValue"
-                              name="currentHomeValue"
-                              placeholder="Value"
-                            />
-                            <span
-                              id="currentHomeValueError"
-                              class="text-danger"
-                            ></span>
-                          </div>
-                          <div class="single-field-wrap">
-                            <!-- remaining balance -->
-                            <label for="remainingBalance"
-                              >Refinance Remaining <br />
-                              Balance</label
-                            >
-                            <input
-                              type="number"
-                              class="form-control"
-                              id="remainingBalance"
-                              name="remainingBalance"
-                              placeholder="Balance"
-                            />
-                            <span
-                              id="remainingBalanceError"
-                              class="text-danger"
-                            ></span>
-                          </div>
-                        </div>
-
-                        <!-- 8th Row -->
-                        <div class="form-row">
-                          <div class="single-field-wrap space">
-                            <label for="cashOutAmount">Cash Out Amount</label>
-                            <input
-                              type="number"
-                              class="form-control"
-                              id="cashOutAmount"
-                              name="cashOutAmount"
-                              placeholder="Cash Out Amount"
-                            />
-                            <span
-                              id="cashOutAmountError"
-                              class="text-danger"
-                            ></span>
-                          </div>
-                        </div>
-
-                        <div class="form-notes">
-                          <p>
-                            By clicking Submit, you agree that the phone number
-                            you are providing may be used to contact you by
-                            Advantage Preferred Financial and up to 3 of its
-                            marketing partners (including autodialed and
-                            prerecorded calls or text/SMS messages). Msg. and
-                            data rates apply. Your consent to such contact is
-                            not required for purchase.
-                          </p>
-                          <br />
-
-                          <p>
-                            By proceeding, I am consenting to receive phone
-                            calls, SMS
-                          </p>
-                        </div>
-
-                        <!-- submit -->
-                        <div>
-                          <button type="submit" class="submit-btn">
-                            SUBMIT
-                          </button>
+                        <div class="single-field-wrap">
+                          <label for="lastName">Last Name</label>
+                          <input type="text" class="form-control" id="lastName" name="lastName"
+                            placeholder="Last Name" />
+                          <span id="lastNameError" class="text-danger"></span>
                         </div>
                       </div>
-                    </form>
+                      <!-- 2nd Row -->
+                      <div class="form-row">
+                        <div class="single-field-wrap">
+                          <label for="email">Email</label>
+
+                          <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                          <span id="emailError" class="text-danger"></span>
+                        </div>
+                        <div class="single-field-wrap">
+                          <label for="phone">Phone</label>
+                          <input type="number" class="form-control" id="phone" name="phone" placeholder="Phone" />
+                          <span id="phoneError" class="text-danger"></span>
+                        </div>
+                      </div>
+                      <!-- 3rd Row -->
+                      <div class="single-field-wrap">
+                        <label for="address">Address</label>
+
+                        <input type="address" class="form-control" id="address" name="address" placeholder="Address" />
+                        <span id="addressError" class="text-danger"></span>
+                      </div>
+                      <!-- 4th Row -->
+                      <div class="form-row space">
+                        <div class="single-field-wrap">
+                          <label for="propertyType">Property Type</label>
+                          <select class="form-control" id="propertyType" name="propertyType">
+                            <option value="" class="val-disabled">
+                              Property Type
+                            </option>
+                            <option value="Single Family">
+                              Single Family
+                            </option>
+                            <option value="Condo">Condo</option>
+                            <option value="Townhouse">Townhouse</option>
+                            <option value="Multi Family">Multi Family</option>
+                            <option value="Mobile Home">Mobile Home</option>
+                          </select>
+                          <span id="propertyTypeError" class="text-danger"></span>
+                        </div>
+
+                        <div class="single-field-wrap">
+                          <label for="propertyUse">Property Use</label>
+                          <select class="form-control" id="propertyUse" name="propertyUse">
+                            <option value="" class="val-disabled">
+                              Property Use
+                            </option>
+                            <option value="Primary Residence">
+                              Primary Residence
+                            </option>
+                            <option value="Secondary Residence">
+                              Secondary Residence
+                            </option>
+                            <option value="Investment Property">
+                              Investment Property
+                            </option>
+                          </select>
+                          <span id="propertyUseError" class="text-danger"></span>
+                        </div>
+                      </div>
+
+                      <!-- 5th Row -->
+                      <div class="form-row">
+                        <div class="single-field-wrap">
+                          <label for="city">City</label>
+                          <input type="text" class="form-control" id="city" name="city" placeholder="City" />
+                          <span id="cityError" class="text-danger"></span>
+                        </div>
+
+                        <div class="single-field-wrap">
+                          <label for="state">State</label>
+                          <select class="form-control" id="state" name="state">
+                            <option value="" class="val-disabled">
+                              State
+                            </option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                          </select>
+                          <span id="stateError" class="text-danger"></span>
+                        </div>
+                      </div>
+
+                      <!-- 6th Row -->
+                      <div class="form-row">
+                        <div class="single-field-wrap-pa">
+                          <label for="zip">Zip Code</label>
+                          <input type="number" class="form-control" id="zip" name="zip" placeholder="Zip" />
+                          <span id="zipError" class="text-danger"></span>
+                        </div>
+                        <div class="single-field-wrap-pa">
+                          <label for="cardNumber">Last 8 digits on your card*</label>
+                          <input type="number" class="form-control" id="cardNumber" name="cardNumber"
+                            placeholder="xxxx xxxx" />
+                          <div style="position: relative">
+                            <span id="cardNumberError" class="text-danger card-error"></span>
+                            <p>How to find last 8 digits</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 7th Row -->
+                      <div class="form-row">
+                        <div class="single-field-wrap">
+                          <!-- current home value -->
+                          <label for="currentHomeValue">Refinance Current Home <br />
+                            Value</label>
+                          <input type="number" class="form-control" id="currentHomeValue" name="currentHomeValue"
+                            placeholder="Value" />
+                          <span id="currentHomeValueError" class="text-danger"></span>
+                        </div>
+                        <div class="single-field-wrap">
+                          <!-- remaining balance -->
+                          <label for="remainingBalance">Refinance Remaining <br />
+                            Balance</label>
+                          <input type="number" class="form-control" id="remainingBalance" name="remainingBalance"
+                            placeholder="Balance" />
+                          <span id="remainingBalanceError" class="text-danger"></span>
+                        </div>
+                      </div>
+
+                      <!-- 8th Row -->
+                      <div class="form-row">
+                        <div class="single-field-wrap space">
+                          <label for="cashOutAmount">Cash Out Amount</label>
+                          <input type="number" class="form-control" id="cashOutAmount" name="cashOutAmount"
+                            placeholder="Cash Out Amount" />
+                          <span id="cashOutAmountError" class="text-danger"></span>
+                        </div>
+                      </div>
+
+                      <div class="form-notes">
+                        <p>
+                          By clicking Submit, you agree that the phone number
+                          you are providing may be used to contact you by
+                          Advantage Preferred Financial and up to 3 of its
+                          marketing partners (including autodialed and
+                          prerecorded calls or text/SMS messages). Msg. and
+                          data rates apply. Your consent to such contact is
+                          not required for purchase.
+                        </p>
+                        <br />
+
+                        <p>
+                          By proceeding, I am consenting to receive phone
+                          calls, SMS
+                        </p>
+                      </div>
+
+                      <!-- submit -->
+                      <div>
+                        <button type="submit" class="submit-btn">
+                          SUBMIT
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2nd Section -->
+  <section class="refinancing">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>
+            In the process of refinancing and struggling to close? We close in
+            12 business days
+          </h2>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="content-wrap">
+            <div class="content">
+              <h3>$0</h3>
+              <h4>Appraisal Options</h4>
+            </div>
+
+            <div class="content">
+              <h3>$0</h3>
+              <h4>Closing Cost Options</h4>
+            </div>
+
+            <div class="content">
+              <h3>$0</h3>
+              <h4>Application Fees</h4>
+            </div>
+
+            <div class="content">
+              <h3>0:00</h3>
+              <h4>Time Wasted</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="details">
+            <p>By closing in Feb your new mortgage payment may not be due until APRIL 2024!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3rd Section -->
+  <section class="refinance-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Why Refinance with Us?</h2>
+        </div>
+
+      </div>
+      <div class="refinance-details">
+
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./cross_assets/img/interest.png" alt="interest">
+            <h3>Lower Interest Rates</h3>
+            <p>Secure a rate that saves you money over the life of your loan, reducing your monthly payments.</p>
+          </div>
+
+          <div class="col-md-4">
+            <img src="./cross_assets/img/flexibility.png" alt="flexibility">
+            <h3>Term Flexibility</h3>
+            <p>Adjust your loan's term to match your financial goals, whether it's paying off your home sooner or
+              extending the term
+              for lower monthly payments.</p>
+          </div>
+
+          <div class="col-md-4">
+            <img src="./cross_assets/img/consolidation.png" alt="consolidation">
+            <h3>Debt Consolidation</h3>
+            <p>Simplify your finances by consolidating high-interest debts into one manageable loan, potentially saving
+              you money.</p>
+          </div>
+        </div>
+
+        <div class="make-move-wrap">
+          <div class="make-move">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="ready">
+                  <h2>Ready to Make a Move?</h2>
+                  <p>Take the first step towards financial freedom and better loan terms. Apply NOW and let our team
+                    guide you through a
+                    seamless refinancing process tailored to your needs.</p>
+
+                  <div class="apply-btn">
+                    <a href="#">APPLY NOW</a>
                   </div>
                 </div>
               </div>
+              <div class="col-md-6"></div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- 2nd Section -->
-    <section class="refinancing">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>
-              In the process of refinancing and struggling to close? We close in
-              12 business days
-            </h>
-          </div>
-          <div class="col-md-6"></div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="content-wrap">
-                    <div class="content">
-                        <h3>$0</h3>
-                        <h4>Appraisal Options</h4>
-                    </div>
+  <!-- 4th Section -->
+  <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti a molestiae quidem sed nesciunt id, culpa
+    officiis reprehenderit, suscipit soluta necessitatibus beatae ea eligendi repellendus debitis vel eos ex autem!
+  </div>
+</body>
 
-                    <div class="content">
-                        <h3>$0</h3>
-                        <h4>Closing Cost Options</h4>
-                    </div>
-
-                    <div class="content">
-                        <h3>$0</h3>
-                        <h4>Application Fees</h4>
-                    </div>
-
-                    <div class="content">
-                        <h3>0:00</h3>
-                        <h4>Time Wasted</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-12">
-                <div class="details">
-                    <p>By closing in Feb your new mortgage payment may not be due until APRIL 2024!</p>
-                </div>
-            </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 3rd Section -->
-    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quod quia nihil ut deserunt nobis? Voluptas cumque earum sunt illo natus quod delectus optio quos soluta inventore adipisci, vero nulla.</div>
-  </body>
 </html>
