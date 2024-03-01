@@ -78,11 +78,255 @@
                             <span id="lastNameError" class="text-danger"></span>
                           </div>
                         </div>
+                        <!-- 2nd Row -->
+                        <div class="form-row">
+                          <div class="single-field-wrap">
+                            <label for="email">Email</label>
+
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="email"
+                              name="email"
+                              placeholder="Email"
+                            />
+                            <span id="emailError" class="text-danger"></span>
+                          </div>
+                          <div class="single-field-wrap">
+                            <label for="phone">Phone</label>
+                            <input
+                              type="number"
+                              class="form-control"
+                              id="phone"
+                              name="phone"
+                              placeholder="Phone"
+                            />
+                            <span id="phoneError" class="text-danger"></span>
+                          </div>
+                        </div>
+                        <!-- 3rd Row -->
+                        <div class="single-field-wrap">
+                          <label for="address">Address</label>
+
+                          <input
+                            type="address"
+                            class="form-control"
+                            id="address"
+                            name="address"
+                            placeholder="Address"
+                          />
+                          <span id="addressError" class="text-danger"></span>
+                        </div>
+                        <!-- 4th Row -->
+                        <div class="form-row space">
+                          <div class="single-field-wrap">
+                            <label for="propertyType">Property Type</label>
+                            <select
+                              class="form-control"
+                              id="propertyType"
+                              name="propertyType"
+                            >
+                              <option value="" class="val-disabled">
+                                Property Type
+                              </option>
+                              <option value="Single Family">
+                                Single Family
+                              </option>
+                              <option value="Condo">Condo</option>
+                              <option value="Townhouse">Townhouse</option>
+                              <option value="Multi Family">Multi Family</option>
+                              <option value="Mobile Home">Mobile Home</option>
+                            </select>
+                            <span
+                              id="propertyTypeError"
+                              class="text-danger"
+                            ></span>
+                          </div>
+
+                          <div class="single-field-wrap">
+                            <label for="propertyUse">Property Use</label>
+                            <select
+                              class="form-control"
+                              id="propertyUse"
+                              name="propertyUse"
+                            >
+                              <option value="" class="val-disabled">
+                                Property Use
+                              </option>
+                              <option value="Primary Residence">
+                                Primary Residence
+                              </option>
+                              <option value="Secondary Residence">
+                                Secondary Residence
+                              </option>
+                              <option value="Investment Property">
+                                Investment Property
+                              </option>
+                            </select>
+                            <span
+                              id="propertyUseError"
+                              class="text-danger"
+                            ></span>
+                          </div>
+                        </div>
+
+                        <!-- 5th Row -->
+                        <div class="form-row">
+                          <div class="single-field-wrap">
+                            <label for="city">City</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="city"
+                              name="city"
+                              placeholder="City"
+                            />
+                            <span id="cityError" class="text-danger"></span>
+                          </div>
+
+                          <div class="single-field-wrap">
+                            <label for="state">State</label>
+                            <select
+                              class="form-control"
+                              id="state"
+                              name="state"
+                            >
+                              <option value="" class="val-disabled">
+                                State
+                              </option>
+                              <option value="AL">Alabama</option>
+                              <option value="AK">Alaska</option>
+                              <option value="AZ">Arizona</option>
+                              <option value="AR">Arkansas</option>
+                              <option value="CA">California</option>
+                              <option value="CO">Colorado</option>
+                              <option value="CT">Connecticut</option>
+                              <option value="DE">Delaware</option>
+                              <option value="DC">District Of Columbia</option>
+                              <option value="FL">Florida</option>
+                              <option value="GA">Georgia</option>
+                              <option value="HI">Hawaii</option>
+                              <option value="ID">Idaho</option>
+                              <option value="IL">Illinois</option>
+                              <option value="IN">Indiana</option>
+                              <option value="IA">Iowa</option>
+                            </select>
+                            <span id="stateError" class="text-danger"></span>
+                          </div>
+                        </div>
+
+                        <!-- 6th Row -->
+                        <div class="form-row">
+                          <div class="single-field-wrap-pa">
+                            <label for="zip">Zip Code</label>
+                            <input
+                              type="number"
+                              class="form-control"
+                              id="zip"
+                              name="zip"
+                              placeholder="Zip"
+                            />
+                            <span id="zipError" class="text-danger"></span>
+                          </div>
+                          <div class="single-field-wrap-pa">
+                            <label for="cardNumber"
+                              >Last 8 digits on your card*</label
+                            >
+                            <input
+                              type="number"
+                              class="form-control"
+                              id="cardNumber"
+                              name="cardNumber"
+                              placeholder="xxxx xxxx"
+                            />
+                            <p>How to find last 8 digits</p>
+                            <span
+                              id="cardNumberError"
+                              class="text-danger"
+                            ></span>
+                          </div>
+                        </div>
+
+                        <!-- 7th Row -->
+                        <div class="form-row">
+                          <div class="single-field-wrap">
+                            <!-- current home value -->
+                            <label for="currentHomeValue"
+                              >Refinance Current Home <br />
+                              Value</label
+                            >
+                            <input
+                              type="number"
+                              class="form-control"
+                              id="currentHomeValue"
+                              name="currentHomeValue"
+                              placeholder="Value"
+                            />
+                            <span
+                              id="currentHomeValueError"
+                              class="text-danger"
+                            ></span>
+                          </div>
+                          <div class="single-field-wrap">
+                            <!-- remaining balance -->
+                            <label for="remainingBalance"
+                              >Refinance Remaining <br />
+                              Balance</label
+                            >
+                            <input
+                              type="number"
+                              class="form-control"
+                              id="remainingBalance"
+                              name="remainingBalance"
+                              placeholder="Balance"
+                            />
+                            <span
+                              id="remainingBalanceError"
+                              class="text-danger"
+                            ></span>
+                          </div>
+                        </div>
+
+                        <!-- 8th Row -->
+                        <div class="form-row">
+                          <div class="single-field-wrap space">
+                            <label for="cashOutAmount">Cash Out Amount</label>
+                            <input
+                              type="number"
+                              class="form-control"
+                              id="cashOutAmount"
+                              name="cashOutAmount"
+                              placeholder="Cash Out Amount"
+                            />
+                            <span
+                              id="cashOutAmountError"
+                              class="text-danger"
+                            ></span>
+                          </div>
+                        </div>
+
+                        <div class="form-notes">
+                          <p>
+                            By clicking Submit, you agree that the phone number
+                            you are providing may be used to contact you by
+                            Advantage Preferred Financial and up to 3 of its
+                            marketing partners (including autodialed and
+                            prerecorded calls or text/SMS messages). Msg. and
+                            data rates apply. Your consent to such contact is
+                            not required for purchase.
+                          </p>
+                          <br />
+
+                          <p>
+                            By proceeding, I am consenting to receive phone
+                            calls, SMS
+                          </p>
+                        </div>
 
                         <!-- submit -->
-                        <div style="margin-top: 40px">
-                          <button type="submit" class="btn btn-primary">
-                            Submit
+                        <div>
+                          <button type="submit" class="submit-btn">
+                            SUBMIT
                           </button>
                         </div>
                       </div>
