@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CROSSCOUNTRY MORTGAGE</title>
-    <link rel="stylesheet" href="./dv_assets/bootstrap.css" />
-    <script src="./dv_assets/jquery.js"></script>
-    <script src="./dv_assets/bootstrap.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./cross_assets/bootstrap.css" />
     <link rel="stylesheet" href="./indexOne.css" />
+
+    <!-- Scripts -->
+    <script src="./cross_assets/jquery.js"></script>
+    <script src="./cross_assets/bootstrap.js"></script>
+    <script src="./form-validation.js"></script>
   </head>
 
   <body>
-    <section class="hero">
+    <section class="hero-wrap">
       <div class="container">
         <header>
           <div class="header-section">
@@ -23,6 +27,72 @@
             </div>
           </div>
         </header>
+        <div class="hero">
+          <div class="row">
+            <div
+              class="col-md-6 d-flex justify-content-center align-items-center"
+            >
+              <h1>
+                You DESERVE the <br />
+                best deal for your <br />
+                Refinance
+              </h1>
+              <p>
+                You could shorten your term or take cash out to consolidate your
+                credit card debt, make home improvements, or to use in any way
+                you may need. Don’t wait any longer apply or call now !
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="card-wrapper">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <h3 class="card-title">GET STARTED — Apply Today!</h3>
+                    <form>
+                      <div class="form-group">
+                        <div class="form-row">
+                          <div class="single-field-wrap">
+                            <label for="firstName">First Name</label>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="firstName"
+                              name="firstName"
+                              placeholder="First Name"
+                            />
+                            <span
+                              id="firstNameError"
+                              class="text-danger"
+                            ></span>
+                          </div>
+                          <div class="single-field-wrap">
+                            <label for="lastName">Last Name</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="lastName"
+                              name="lastName"
+                              placeholder="Last Name"
+                            />
+                            <span id="lastNameError" class="text-danger"></span>
+                          </div>
+                        </div>
+
+                        <!-- submit -->
+                        <div style="margin-top: 40px">
+                          <button type="submit" class="btn btn-primary">
+                            Submit
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
