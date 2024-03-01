@@ -46,6 +46,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
@@ -86,7 +87,7 @@ p {
   font-weight: 400;
   line-height: 25px;
   color: #fff;
-  margin-top: 25px;
+  margin: 25px 0 100px 0;
 }
 
 .card-wrapper {
@@ -210,4 +211,61 @@ p {
 .card-error {
   position: absolute;
   left: 128px;
+  top: -2px;
+}
+
+/* 2nd Section */
+.refinancing {
+  margin: 75px 0;
+}
+
+.refinancing h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #000;
+  line-height: 38px;
+}
+
+.content-wrap {
+  margin: 75px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content h3 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #43ad4d;
+  line-height: 38px;
+}
+
+.content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  line-height: 30px;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  margin: 0;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  padding: 15px 5px;
 }
