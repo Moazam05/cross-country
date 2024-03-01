@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./dv_assets/Inter-Regular.eot");
+  src: url("./dv_assets/Inter-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./dv_assets/Inter-Regular.woff2") format("woff2"),
+    url("./dv_assets/Inter-Regular.woff") format("woff"),
+    url("./dv_assets/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./cross_assets/Inter-SemiBold.eot");
+  src: url("./cross_assets/Inter-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./cross_assets/Inter-SemiBold.woff2") format("woff2"),
+    url("./cross_assets/Inter-SemiBold.woff") format("woff"),
+    url("./cross_assets/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./cross_assets/Inter-Bold.eot");
+  src: url("./cross_assets/Inter-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./cross_assets/Inter-Bold.woff2") format("woff2"),
+    url("./cross_assets/Inter-Bold.woff") format("woff"),
+    url("./cross_assets/Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+}
