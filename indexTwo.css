@@ -1,0 +1,535 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./dv_assets/Inter-Regular.eot");
+  src: url("./dv_assets/Inter-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./dv_assets/Inter-Regular.woff2") format("woff2"),
+    url("./dv_assets/Inter-Regular.woff") format("woff"),
+    url("./dv_assets/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./cross_assets/Inter-SemiBold.eot");
+  src: url("./cross_assets/Inter-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./cross_assets/Inter-SemiBold.woff2") format("woff2"),
+    url("./cross_assets/Inter-SemiBold.woff") format("woff"),
+    url("./cross_assets/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./cross_assets/Inter-Bold.eot");
+  src: url("./cross_assets/Inter-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./cross_assets/Inter-Bold.woff2") format("woff2"),
+    url("./cross_assets/Inter-Bold.woff") format("woff"),
+    url("./cross_assets/Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.hero-wrap {
+  background-image: url("./cross_assets/img/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-section {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prefer {
+  color: #fff;
+}
+
+.prefer p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #fff;
+  margin: 25px 0 100px 0;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-body img {
+  margin: 200px 0 0;
+}
+
+.card-body h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #000;
+  line-height: 38px;
+  margin: 10px 0 0 0;
+}
+
+.card-body p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  margin: 15px 0 50px 0;
+  text-align: center;
+}
+
+p.received {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  margin: 0 80px 200px;
+}
+
+.thankyou-footer p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  /* margin: 0 0 20px 0; */
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px 0 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  margin-bottom: 130px;
+  width: 500px;
+  text-align: left;
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight: 600;
+  color: #000;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.thankyou-footer {
+  background: linear-gradient(180deg, #d9e5e9 0%, #cbd7db 100%);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.thankyou-footer p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.thankyou-footer a {
+  background-color: #000;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.form-group {
+  margin: 24px 0 0 0;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 10px 0;
+  gap: 12px;
+}
+
+.single-field-wrap-pa {
+  height: 90px;
+  width: 100%;
+}
+
+.single-field-wrap-pa p {
+  color: #adb5bd;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.form-row label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  line-height: 18px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #000;
+  line-height: 18px;
+  height: 48px;
+}
+
+.text-danger {
+  font-size: 12px;
+  margin: 5px 0;
+  font-weight: 500;
+  color: #ff0000;
+}
+
+.single-field-wrap {
+  height: 80px;
+  width: 100%;
+}
+
+.val-disabled {
+  color: #adb5bd !important;
+}
+
+.space {
+  margin-top: 15px;
+}
+
+.form-notes {
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 15px;
+}
+
+.form-notes p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #495057;
+  line-height: 14px;
+  margin: 0;
+}
+
+.submit-btn {
+  background-color: #000;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-left {
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+
+.card-error {
+  position: absolute;
+  left: 128px;
+  top: -2px;
+}
+
+/* 2nd Section */
+.refinancing {
+  margin: 75px 0;
+}
+
+.refinancing h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #000;
+  line-height: 38px;
+}
+
+.content-wrap {
+  margin: 75px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content h3 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #43ad4d;
+  line-height: 38px;
+}
+
+.content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  line-height: 30px;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  margin: 0;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  padding: 15px 5px;
+}
+
+.refinance-us {
+  padding: 80px 0;
+  background-color: #f6f6f6;
+}
+
+.refinance-us h2 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #000;
+}
+
+.refinance-details {
+  margin: 85px 0 0 0;
+}
+
+.refinance-details h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  line-height: 38px;
+  margin: 30px 0 15px 0;
+}
+
+.refinance-details p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5a5a5a;
+  line-height: 20px;
+  margin: 0;
+}
+
+.make-move-wrap {
+  margin: 80px 0 0;
+}
+
+.make-move {
+  background-image: url("./cross_assets/img/ready-move.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ready {
+  padding: 65px;
+}
+
+.ready h2 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 38px;
+}
+
+.ready p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 20px;
+  margin: 16px 0;
+}
+
+.apply-btn {
+  margin: 40px 0 0 0;
+}
+
+.ready a {
+  background-color: #000;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.branding {
+  margin: 40px 0;
+}
+
+.brand-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.footer-main {
+  padding: 25px 0;
+  background-color: #000;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-wrap p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 18px;
+  margin: 0;
+}
+
+.hero-left-mobile {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .content-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 25px 0;
+  }
+
+  .brand-wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .hero-left {
+    height: unset;
+  }
+
+  .hero h1 {
+    display: none;
+  }
+
+  .hero p {
+    margin: 25px 0 50px 0;
+  }
+
+  .hero-left-mobile {
+    display: block !important;
+  }
+
+  .hero-left-mobile h1 {
+    display: block !important;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #fff;
+  }
+
+  .refinancing {
+    margin: 25px 0;
+  }
+
+  .content h3 {
+    font-size: 24px;
+  }
+  .content h4 {
+    font-size: 18px;
+  }
+
+  .refinance-us {
+    padding: 40px 0;
+  }
+
+  .refinance-us h2 {
+    font-size: 22px;
+  }
+  .refinance-details {
+    margin: 35px 0 0;
+  }
+  .refinance-details p {
+    margin-bottom: 25px;
+  }
+
+  .make-move-wrap {
+    margin: 20px 0 0;
+  }
+
+  .ready {
+    padding: 25px;
+  }
+
+  .ready p {
+    font-size: 13px;
+    text-wrap: balance;
+  }
+
+  .footer-wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
