@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       { id: "phone", message: "Phone required" },
       { id: "address", message: "Address required" },
       { id: "propertyType", message: "Property Type required" },
+      { id: "propertyUse", message: "Property Use required" },
       { id: "city", message: "City required" },
       { id: "state", message: "State required" },
       { id: "zip", message: "Zip required" },
