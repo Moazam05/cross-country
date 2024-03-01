@@ -343,3 +343,14 @@ p {
   text-align: center;
   text-decoration: none;
 }
+
+.branding {
+  margin: 50px 0;
+}
+
+.brand-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
